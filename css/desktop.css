@@ -1,0 +1,166 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  line-height: 1.5;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.message {
+  font-size: 0.75rem;
+}
+
+/* Phần banner */
+
+.banner-text {
+  background-image: url("../img/banner.jpg");
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Phần navbar */
+
+#navbar {
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.nav-item {
+  padding: 30px 10px;
+  border-left: 1px solid var(--bs-border-color);
+}
+
+.nav-item:nth-child(2),
+.nav-item:nth-child(5) {
+  border-right: 1px solid var(--bs-border-color);
+}
+
+.nav-tagname {
+  width: 200px;
+}
+
+.avatar-img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 10px solid white;
+}
+
+/* Phần thông tin cá nhân */
+
+.hide {
+  display: none;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+
+/* Phần job */
+
+.name-work {
+  position: relative;
+}
+
+.job-item .card:hover {
+  padding-bottom: 50px !important;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.job-item .card:hover .job-footer {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.name-work::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.recent {
+  background-color: var(--bs-primary);
+  color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.hobby-item i {
+  width: 50px;
+  color: var(--bs-primary);
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rate .bar {
+  height: 5px;
+}
+
+/* Phần chứng chỉ */
+
+.divider {
+  height: 1px;
+  background-color: orange;
+  margin-block: 2rem;
+}
+
+/* Phần dự án */
+
+.project-name a {
+  color: black;
+}
+
+.project-name a:hover {
+  color: var(--bs-primary);
+  transition: all 0.5s;
+}
+
+.project-description td {
+  border-bottom: 1px solid var(--bs-border-color);
+  padding: 10px;
+}
+.project-description td:first-child {
+  width: 30%;
+}
+.project-description tr:last-child td {
+  border-bottom: none;
+}
+.time-line .year {
+  padding: 0px 20px;
+  font-size: 0.9rem;
+  background-color: var(--bs-primary);
+  border-radius: 20px;
+}

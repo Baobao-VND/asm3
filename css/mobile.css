@@ -1,0 +1,10 @@
+@media only screen and (max-width: 767px) {
+  #navbar {
+    border-bottom: 0;
+  }
+  .nav-item {
+    border-left: unset;
+    border-right: unset;
+    padding: 10px 0;
+  }
+}
